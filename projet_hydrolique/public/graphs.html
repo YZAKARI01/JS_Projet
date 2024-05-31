@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Graphiques Excel</title>
+    <link href="./style/style.css" rel="stylesheet" type="text/css"/>
+    <script src="./scripts/chart.min.js"></script>
+    <script src="./scripts/myChart.js" type="module" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./scripts/socket.js" defer></script>
+</head>
+<body>
+    <h1>Graphiques des données Excel</h1>
+    <div>
+        <input type="checkbox" id="zoomCheckbox">
+        <label for="zoomCheckbox">Activer le zoom</label>
+    </div>
+    <div>
+        <label for="startYear">Année de début:</label>
+        <input type="text" id="startYear" placeholder="ex: 2000-2001">
+        <label for="endYear">Année de fin:</label>
+        <input type="text" id="endYear" placeholder="ex: 2010-2011">
+        <button id="applyInterval">Appliquer l'intervalle</button>
+    </div>
+    <div id="chart">
+        <canvas id="myChart"></canvas>
+    </div>
+</body>
+</html>

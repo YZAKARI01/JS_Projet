@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title= title
+  body
+    h1 Créer un compte
+    form(action="/register", method="POST")
+      label(for="username") Nom d'utilisateur:
+      input(type="text", name="username", required)
+      br
+      label(for="password") Mot de passe:
+      input(type="password", name="password", required)
+      br
+      button(type="submit") S'inscrire

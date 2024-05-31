@@ -1,0 +1,51 @@
+main {
+  width: 100%;
+  max-width: 800px; /* Augmenter la largeur maximale */
+  margin: 0 auto; /* Centrer horizontalement */
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Centrer le contenu */
+}
+
+form input[type="file"] {
+  display: none; /* Masquer le bouton de téléchargement par défaut */
+}
+
+.custom-file-upload {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  background-color: #00B7FF;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.custom-file-upload:hover {
+  background-color: #008fdd;
+}
+
+label {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+/* Style pour le bouton "View Graphs" */
+form:nth-child(2) button {
+  background-color: #00B7FF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form:nth-child(2) button:hover {
+  background-color: #008fdd;
+}

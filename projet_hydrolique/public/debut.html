@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualisation des cartes</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+  <header>
+    <img src="/img/LOGO-ABHBC.jpg" alt="Logo" class="logo">
+    <h1>Visualisation des cartes</h1>
+  </header>
+  <main>
+    <h2>Upload Excel File</h2>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <label for="file-upload" class="custom-file-upload">
+        Choisir un fichier
+      </label>
+      <input id="file-upload" type="file" name="file" accept=".xlsx,.xls">
+      <button type="submit">Upload File</button>
+    </form>
+    <form action="/graphs">
+      <button onclick="location.href='/graphs'" type="submit"class="custom-file-upload">View Graphs</button>
+    </form>
+  </main>
+</body>
+
+</html>
